@@ -4,7 +4,7 @@ Board representation and legal move generation
 
 | Search | Alpha-Beta Pruning with Quiescence & Iterative Deepening |
 
-| Memory | Two-slot Transposition Table (32MB default) |
+| Memory | Two-slot Transposition Table|
 
 | Heuristics | MVV-LVA Move Ordering & Tapered Piece-Square Tables |
 
