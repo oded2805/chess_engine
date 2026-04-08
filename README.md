@@ -1,11 +1,9 @@
 # chess_engine
 Features-
 Board representation and legal move generation
-Alpha-beta search
-Basic move ordering
-Quiescence search
-Transposition table (Zobrist hashing)
-Transposition Table
+| Search | Alpha-Beta Pruning with Quiescence & Iterative Deepening |
+| Memory | Two-slot Transposition Table (32MB default) |
+| Heuristics | MVV-LVA Move Ordering & Tapered Piece-Square Tables |
 
 The engine uses a fixed-size transposition table for caching previously evaluated positions.
 
