@@ -7,7 +7,7 @@
 #include "make_move.h"
 #include "game_state.h"
 #include <stdio.h>
-
+#define QUIESCE_DEPTH 3
 
 
 
@@ -240,7 +240,7 @@ int search_best_score(int depth, color col, int alpha, int beta)
 {
     if (depth<=0)
     {
-        return Quiesce(alpha,beta,3,col);
+        return Quiesce(alpha,beta,QUIESCE_DEPTH,col);
     }
     size_t ind=game.position_hash&(TABLE_SIZE-1);
 

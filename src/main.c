@@ -21,7 +21,7 @@
 #endif
 
 #define MAX_MOVES 800
-
+#define DEPTH 8
 
 void commit_print(move play)
 {
@@ -83,7 +83,7 @@ void player_vs_engine(int starter)
 	printf("\n\n");	
 	if (starter)
 	{
-		curr_move=find_best_move(game.side_to_move,8);
+		curr_move=find_best_move(game.side_to_move,DEPTH);
 		commit_print(curr_move);
 	}
 	while(1)
