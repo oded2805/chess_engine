@@ -14,7 +14,7 @@ void commit_move(move play)
 {
 		if (play.play==ILLEGAL_MOVE)
 	{
-		printf("illeagle move agame.TTempted\n\n");
+		printf("illeagle move attempted\n\n");
 		return  ;
 	}
 	if (play.play==MATE)
